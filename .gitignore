@@ -9,3 +9,7 @@ cdk.out
 
 # Parcel default cache directory
 .parcel-cache
+
+yarn-error.log
+dist
+package-lock.json
