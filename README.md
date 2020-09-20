@@ -62,3 +62,7 @@ git clone ...
 https://youtu.be/00_sx_-SFc0
 
 Go ahead and try it! `npm run build && npm run cdk deploy` to build and deploy the code. Send a mail to `some-random-id@your-domain.com` and within a few seconds you should see a new entry in your table.
+
+# License
+
+MIT
