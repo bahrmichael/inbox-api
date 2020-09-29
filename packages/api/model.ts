@@ -1,4 +1,5 @@
 import { Table, Entity } from 'dynamodb-toolbox';
+import { v4 as uuid } from 'uuid';
 
 // Require AWS SDK and instantiate DocumentClient
 import * as DynamoDB from 'aws-sdk/clients/dynamodb';
@@ -22,7 +23,7 @@ export const Mail = new Entity({
   
     attributes: {
       id: { partitionKey: true }, // email alias
-      sk: { hidden: true, sortKey: true, default: (data: any) => `${data.timestamp}#${data.from}` },
+      sk: { hidden: true, sortKey: true, default: (data: any) => `${data.timestamp}#${uuid()}` },
       timestamp: { type: 'string' },
       from: { type: 'string' },
       to: { type: 'string' },
