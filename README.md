@@ -1,8 +1,10 @@
 # Inbox API
 
-Companion article: [Validate Email Workflows with a Serverless Inbox API](...)
+Companion article: [Validate Email Workflows with a Serverless Inbox API](https://bahr.dev/2020/09/29/validate-email-workflows/)
 
-This projects spins up a mail receiver plus an API that you can retrieve received mail from.
+The solution consists of two parts. The email receiver and the api that lets you access the received mail. The first writes to the database, the latter reads from it.
+
+![Architecture Overview](https://github.com/bahrmichael/bahrmichael.github.io/raw/master/pictures/2020/tempmail/inbox-api.png)
 
 ## Prerequisites
 
